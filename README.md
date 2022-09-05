@@ -6,3 +6,13 @@
 
 client secret is a piece of info that is used to securely complete the payment instead of storing the entire PaymentIntent object. 
 
+
+const paymentMethodReq = stripe.createPaymentMethod({ 
+type: "card", 
+card: cardElement,
+billing_details: billingDetails 
+}) 
+
+
+![alt text](https://github.com/taroserigano/Super_SimpleReact__Stripe_Practice/blob/main/tm1.png)
+
