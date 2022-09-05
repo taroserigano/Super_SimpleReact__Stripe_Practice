@@ -16,4 +16,12 @@ billing_details: billingDetails
 
 ![alt text](https://github.com/taroserigano/Super_SimpleReact__Stripe_Practice/blob/main/tm1.png)
 
+
+const confirmeCartPayment = stripe.confirmCardPayment(clientSecret, 
+{ paymentmethod: paymentMethodReq.paymentMethod.id 
+}) 
+
+
+
+
 ![alt text](https://github.com/taroserigano/Super_SimpleReact__Stripe_Practice/blob/main/tmp2.png)
