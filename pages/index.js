@@ -12,6 +12,10 @@ const MainPage = props => {
 
   const addDonut = () => setNumDonuts(num => Math.min(12, num + 1));
   const remDonut = () => setNumDonuts(num => Math.max(1, num - 1));
+  
+  const getDonutPrice = numDonuts =>
+  (Math.round(numDonuts * 1.5 * 100) / 100).toFixed(2);
+
 
   return (
     <Layout title="Donut Shop">
